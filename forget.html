@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#">
+    <title>Lupa Password</title>
+    <link rel="stylesheet" href="/css/forget.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container reset-password">
+            <form id="forgot-password-form">
+                <h1>Lupa Password</h1>
+                <p>Masukkan email Anda untuk melihat password Anda.</p>
+                <input type="email" placeholder="Email" id="email" required>
+                <button type="submit">Cari Password</button>
+                <a href="login.html" class="back-button">Kembali ke Login</a>
+                <!-- Tambahkan field untuk menampilkan password -->
+                <div id="password-display" class="password-display">
+                    <label for="password">Password Anda:</label>
+                    <input type="text" id="password" placeholder="Password akan muncul di sini" readonly>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/forget.js"></script>
+</body>
+</html>

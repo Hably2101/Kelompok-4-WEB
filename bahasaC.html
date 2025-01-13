@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa C</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/language/bahasa-c.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav>
+            <div class="logo_container">
+                <img src="/assets/logo-kelompok-4.png" alt="logo">
+                <span class="logo_text">Kelompok 4</span>
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul id="menu-list" class="hidden">
+                <li><a href="homepage-percobaan.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#language">Language</a>
+                    <ul class="dropdown-content">
+                        <li><a href="bahasaC.html">C</a></li>
+                        <li><a href="c++.html">C++</a></li>
+                        <li><a href="BahasaJava.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="ruby.html">Ruby</a></li>
+                        <li><a href="php.html">PHP</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#comment">Comment Me</a></li>
+                <li><a href="#" class="login" id="loginButton">Logout</a></li>
+                <!-- Tombol untuk dark mode -->
+                <button id="darkModeToggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i> <!-- Ikon bulan untuk dark mode -->
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Bahasa C</h1>
+
+        <!-- Definition Container -->
+        <div class="definition-container">
+            <div class="img" id="C">
+                <img src="/assets/language/c-programming.png" alt="bahasa C">
+            </div>
+
+            <div class="definisi">
+                <p>
+                    Bahasa pemrograman C adalah bahasa pemrograman tujuan umum yang diciptakan oleh Dennis Ritchie pada tahun 1972 untuk Sistem Operasi Unix di Bell Telephone Laboratories. Awalnya dirancang untuk pemrograman sistem dan jaringan komputer, C juga banyak digunakan dalam pengembangan perangkat lunak aplikasi di berbagai platform sistem operasi dan arsitektur komputer. Pengaruhnya sangat besar terhadap bahasa pemrograman lain, terutama C++, yang merupakan ekstensi dari C. Selain itu, berbagai compiler populer tersedia untuk C, dan sejak tahun 2000, bahasa ini secara konsisten menduduki peringkat atas dalam indeks popularitas bahasa pemrograman seperti TIOBE.
+                </p>
+            </div>
+        </div>
+
+        <!-- Code Container -->
+        <div class="code-container">
+            <h3>Contoh Kode C</h3>
+            <div class="input">
+                <pre>
+                    <code id="C-code">
+                        #include <stdio.h> // Library standar untuk input dan output
+
+                            int main() {
+                                // Mencetak "Hello, World!" ke layar
+                                printf("Hello, World!\n");
+                            
+                                // Mendeklarasikan dua variabel integer dan satu variabel untuk hasil
+                                int a, b, sum;
+                            
+                                // Menginisialisasi nilai variabel
+                                a = 5;
+                                b = 7;
+                            
+                                // Menjumlahkan a dan b
+                                sum = a + b;
+                            
+                                // Mencetak hasil penjumlahan
+                                printf("Hasil penjumlahan %d + %d adalah %d\n", a, b, sum);
+                            
+                                return 0; // Mengembalikan nilai 0 menandakan program selesai dengan sukses
+                            }
+                            
+                    </code>
+                </pre>
+                <button id="run-code">Run Code</button>
+            </div>
+
+            <h4>Output:</h4>
+            <div class="output">
+                <p id="code-output"></p>
+            </div>
+        </div>
+
+        <!-- Profile Container -->
+        <H3>PELOPOR</H3>
+        <div class="profile-container">
+            <div class="img" id="profile-img">
+                <img src="/assets/img/pelopor/Dennis MacAlistair Ritchie.jpg" alt="Dennis MacAlistair Ritchie">
+            </div>
+
+            <div class="profile">
+                <table>
+                    <tr>
+                        <th>Informasi</th>
+                        <th>Detail</th>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Dennis MacAlistair Ritchie</td>
+                    </tr>
+                    <tr>
+                        <td>Lahir</td>
+                        <td>9 September 1941</td>
+                    </tr>
+                    <tr>
+                        <td>Meninggal</td>
+                        <td>12 Oktober 2011 (umur 70)</td>
+                    </tr>
+                    <tr>
+                        <td>Almamater</td>
+                        <td>Harvard University</td>
+                    </tr>
+                    <tr>
+                        <td>Penghargaan</td>
+                        <td>Turing Award dan National Medal of Technology</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Kelompok 4</h3>
+                <p>Terima kasih telah mengunjungi website kami. Hubungi kami untuk informasi lebih lanjut!</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="ph ph-facebook-logo"></i></a></li>
+                    <li><a href="#"><i class="ph ph-twitter-logo"></i></a></li>
+                    <li><a href="#"><i class="ph ph-instagram-logo"></i></a></li>
+                    <li><a href="#"><i class="ph ph-linkedin-logo"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kelompok 4. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/history.js"></script>
+    <script>
+        // Simulate running C code
+        document.getElementById('run-code').addEventListener('click', function () {
+            const output = "Hello, World!\nHasil penjumlahan 5 + 7 adalah 12"; // Mock output of C code
+            document.getElementById('code-output').innerText = output;
+        });
+    </script>
+</body>
+</html>

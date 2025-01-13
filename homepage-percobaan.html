@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pemrograman</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="icon" href="/assets/logo-kelompok-4.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav>
+            <div class="logo_container">
+                <img src="/assets/logo-kelompok-4.png" alt="logo">
+                <span class="logo_text">Kelompok 4</span>
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul id="menu-list" class="hidden">
+                <li><a id="home" href="homepage-percobaan.html">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#language">Language</a>
+                    <ul class="dropdown-content">
+                        <li><a href="bahasaC.html">C</a></li>
+                        <li><a href="c++.html">C++</a></li>
+                        <li><a href="BahasaJava.html">Java</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="ruby.html">Ruby</a></li>
+                        <li><a href="php.html">PHP</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#comment">Comment Me</a></li>
+                <li><a href="#" class="login" id="loginButton">Logout</a></li>
+                <!-- Tombol untuk dark mode -->
+                <button id="darkModeToggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i> <!-- Ikon bulan untuk dark mode -->
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="information">
+            <h1>Selamat Datang di Web <span>Kelompok 4</span></h1>
+            <p>kelompok kami berisi 3 orang yang membantu membuat web ini.
+                mereka adalah Muhammad Hably Nashrullah sebagai <span>ketua kelompok dan web developer</span>, 
+                Ananda Rahman Hakim sebagai <span>wakil ketua kelompok dan perancang desain web</span>, dan
+                Alif Fatir Aidil sebagai <span>anggota dan pembuat dokumen</span>.
+                Jika ingin mengetahui penjelasan dari web kami, bisa kunjungi youtube kami. 
+            </p>
+            <a href="#" class="buy-button">Klik Disini</a>
+        </div>
+    </section>
+    <!--About section-->
+    <section id="about-us" class="about-section">
+        <div class="about-cover">
+            <div class="about-title">
+                <h1>About Us</h1>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="image-section">
+                <div class="image-box">
+                    <img src="/assets/logo-kelompok-4.png" alt="Kelompok 4">
+                    <p class="image-caption">Kelompok 4</p>
+                </div>
+            </div>
+            <div class="text-section">
+                <p>
+                    Kami dari kelompok 4, sebuah tim yang terdiri dari individu dengan minat mendalam pada teknologi, khususnya di bidang bahasa pemrograman. Dengan latar belakang yang beragam, mulai dari mahasiswa, pengembang perangkat lunak, hingga penggiat teknologi, kami bergabung untuk menciptakan sebuah platform yang mengedukasi, menginspirasi, dan memotivasi siapa saja yang ingin belajar dan mendalami dunia pemrograman.
+                </p><br>
+                <p>
+                    Tujuan utama kami adalah menyediakan informasi yang lengkap, relevan, dan mudah dipahami oleh berbagai kalangan, baik itu pemula yang baru mengenal dunia coding maupun profesional yang ingin memperluas wawasan mereka. Kami percaya bahwa belajar bahasa pemrograman adalah salah satu kunci untuk menghadapi tantangan di era digital ini.
+                </p><br>
+                <p>
+                    Dalam kelompok kami, setiap anggota memiliki peran penting. Ada yang berfokus pada pengumpulan materi, ada yang ahli dalam merancang desain antarmuka, dan ada pula yang bertugas memastikan bahwa informasi yang kami sampaikan selalu up-to-date. Kolaborasi dan semangat saling mendukung menjadi pondasi utama tim kami.
+                </p>
+            </div>            
+        </div>
+        <!--News Section-->        
+        <div class="news-section">
+            <h2>Berita Terbaru</h2>
+            <div class="news-slider">
+                <div class="news-card">
+                    <img src="/assets/language/los-angeles.jpeg" alt="News 1">
+                    <h3>Kebakaran di Los Angeles, Warganet Kaitkan Pidato Trump dan Al-Baqarah Ayat 266</h3>
+                    <p>Kebakaran yang dahsyat melanda wilayah Los Angeles (LA), Amerika Serikat (AS). Bencana yang terjadi sejak Selasa (7/1/2025) waktu setempat itu telah menyebabkan kerugian dan kerusakan yang parah.</p>
+                    <button onclick="goToNews('https://www.detik.com/hikmah/khazanah/d-7728181/kebakaran-di-los-angeles-warganet-kaitkan-pidato-trump-dan-al-baqarah-ayat-266')">Selengkapnya</button>
+                </div>
+                <div class="news-card">
+                    <img src="/assets/language/marvel-rivals-new.jpg" alt="News 2">
+                    <h3>Masuk Season 1, Jumlah Player Marvel Rivals Langsung Meningkat Pesat</h3>
+                    <p>Hari Jumat (10/1) lalu, NetEase Games secara resmi umumkan Marvel Rivals season 1 dengan beragam pembaruan, termasuk debutnya tim Fantastic Four sebagai Hero baru di gamenya.</p>
+                    <button onclick="goToNews('https://gamebrott.com/jumlah-player-marvel-rivals-meningkat/')">Selengkapnya</button>
+                </div>
+                <div class="news-card">
+                    <img src="/assets/language/kunjungan-kemenkeu.jpg" alt="News 3">
+                    <h3>Menkeu Sri Mulyani Terima Kunjungan Dubes Australia dan Financial Secretary Hong Kong</h3>
+                    <p>Kemenkeu — Menteri Keuangan Sri Mulyani Indrawati menerima kunjungan Duta Besar Australia untuk Indonesia, Penny Williams, dan Financial Secretary (FS) of the Hong Kong Special Administrative Region, Paul Chan Mo-po, secara terpisah di Jakarta pada Rabu (8/1).</p>
+                    <button onclick="goToNews('https://www.kemenkeu.go.id/informasi-publik/publikasi/berita-utama/Menkeu-Bertemu-Dubes-Australia-FS-Hongkong')">Selengkapnya</button>
+                </div>
+                <div class="news-card">
+                    <img src="/assets/language/anak-bos-rental.jpg" alt="News 4">
+                    <h3>Ucapan Anak Bos Rental Pertama Kali Bertemu Oknum TNI AL di Rest Area KM 45, Petugas Langsung Panik</h3>
+                    <p>Anak bos rental sempat ngamuk ke oknum TNI AL pelaku penembakan di rest area KM 45 Tol Tangerang-Merak.
+                    Ia tak mampu membendung emosi kala berhadapan langsung dengan pelaku penembakan bos rental, Ilyas Abdurrahman.</p>
+                    <button onclick="goToNews('https://bogor.tribunnews.com/2025/01/11/ucapan-anak-bos-rental-pertama-kali-bertemu-oknum-tni-al-di-rest-area-km-45-petugas-langsung-panik')">Selengkapnya</button>
+                </div>
+                <div class="news-card">
+                    <img src="/assets/language/raffi-ahmad.jpeg" alt="News 5">
+                    <h3>Raffi Ahmad Blak-blakan Kronologi Viral Patwal Arogan Mobil RI 36</h3>
+                    <p>Utusan Khusus Presiden Bidang Pembinaan Generasi Muda dan Pekerja Seni Raffi Ahmad mengonfirmasi dirinya merupakan pengguna mobil pejabat berpelat RI 36 yang tengah ramai disorot di media sosial.</p>
+                    <button onclick="goToNews('https://www.cnnindonesia.com/hiburan/20250111154034-234-1186128/raffi-ahmad-blak-blakan-kronologi-viral-patwal-arogan-mobil-ri-36')">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Language Section-->
+    <section id="language" class="language-section">
+        <div class="language-cover">
+            <div class="language-header">
+                <h2>Bahasa Pemrograman</h2>
+                <p>
+                    Bahasa pemrograman adalah kumpulan instruksi yang digunakan oleh pengembang untuk memberikan perintah kepada komputer. 
+                    Bahasa ini memungkinkan pembuatan berbagai macam aplikasi, sistem operasi, hingga teknologi modern seperti kecerdasan buatan dan pengolahan data besar. 
+                    Setiap bahasa memiliki karakteristik, kelebihan, dan kekurangan yang membuatnya cocok untuk kebutuhan tertentu. Berikut adalah beberapa jenis bahasa pemrograman populer:
+                </p>
+            </div>
+        </div>
+        <div class="language-cards">
+            <div class="card">
+                <img src="/assets/language/c-programming.png" alt="C Programming">
+                <h3>C</h3>
+                <p>
+                    C adalah salah satu bahasa pemrograman tertua yang masih banyak digunakan hingga saat ini. Dikenal sebagai "bahasa tingkat menengah", 
+                    C menggabungkan elemen bahasa tingkat tinggi dan tingkat rendah. Bahasa ini digunakan untuk pengembangan sistem operasi, 
+                    perangkat keras, dan aplikasi yang membutuhkan performa tinggi seperti driver atau compiler. C juga merupakan dasar dari banyak bahasa modern lainnya.
+                </p>
+                <button onclick="window.location.href='bahasaC.html'">Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/C++_image.png" alt="C++ Programming">
+                <h3>C++</h3>
+                <p>
+                    C++ adalah pengembangan dari C yang menambahkan fitur pemrograman berorientasi objek. Bahasa ini dikenal dengan fleksibilitasnya, 
+                    memungkinkan pengembang untuk mengelola memori secara manual dan menciptakan aplikasi dengan performa tinggi. 
+                    C++ banyak digunakan dalam pengembangan game, perangkat lunak desktop, hingga aplikasi real-time yang kompleks seperti sistem keuangan.
+                </p>
+                <button onclick="window.location.href='c++.html'">Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/java-image.png" alt="Java Programming">
+                <h3>Java</h3>
+                <p>
+                    Java adalah bahasa pemrograman berbasis objek yang terkenal dengan konsep "write once, run anywhere". 
+                    Java memungkinkan aplikasi berjalan di berbagai platform tanpa perlu perubahan kode. Bahasa ini digunakan untuk pengembangan aplikasi mobile (khususnya Android), 
+                    aplikasi enterprise, hingga sistem backend yang membutuhkan skalabilitas tinggi.
+                </p>
+                <button onclick="window.location.href='Bahasajava.html'">Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/Javascript.png" alt="JavaScript Programming">
+                <h3>JavaScript</h3>
+                <p>
+                    JavaScript adalah bahasa pemrograman utama dalam pengembangan web modern. Awalnya digunakan untuk menambahkan elemen interaktif pada halaman web, 
+                    JavaScript kini berkembang menjadi bahasa yang dapat digunakan di server (melalui Node.js), aplikasi mobile, hingga pengembangan game. 
+                    Dengan dukungan framework seperti React dan Vue.js, JavaScript menjadi alat penting dalam dunia pengembangan antarmuka pengguna.
+                </p>
+                <button onclick="window.location.href='javascript.html'">Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/PHP-image.png" alt="PHP Programming">
+                <h3>PHP</h3>
+                <p>
+                    PHP adalah bahasa pemrograman yang dirancang khusus untuk pengembangan web. PHP memungkinkan server untuk menghasilkan halaman web dinamis 
+                    dan berinteraksi dengan basis data. Sebagian besar platform populer seperti WordPress dan Facebook dibangun menggunakan PHP, 
+                    menjadikannya salah satu bahasa yang tetap relevan meski usia penggunaannya sudah cukup lama.
+                </p>
+                <button onclick="window.location.href='php.html'">Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="assets/img/Python.png" alt="Python Programming">
+                <h3>Python</h3>
+                <p>
+                    Python adalah bahasa pemrograman tingkat tinggi yang terkenal karena sintaksisnya yang sederhana dan mudah dibaca. 
+                    Python digunakan dalam berbagai bidang, termasuk pengembangan web, data science, machine learning, hingga pengembangan perangkat lunak. 
+                    Fleksibilitasnya menjadikan Python sebagai salah satu bahasa yang sangat disukai oleh pemula maupun profesional.
+                </p>
+                <button onclick="window.location.href='python.html'">Selengkapnya</button>
+            </div>
+            <div class="card">
+                <img src="/assets/img/Ruby-image.png" alt="Ruby Programming">
+                <h3>Ruby</h3>
+                <p>
+                    Ruby adalah bahasa pemrograman yang dirancang untuk membuat pengembangan aplikasi menjadi lebih menyenangkan. Dengan sintaksis yang 
+                    mudah dipahami dan pendekatan "convention over configuration", Ruby sering digunakan bersama framework Ruby on Rails. 
+                    Bahasa ini cocok untuk pengembangan aplikasi web yang cepat dan efisien, terutama untuk startup yang menginginkan solusi yang gesit.
+                </p>
+                <button onclick="window.location.href='ruby.html'">Selengkapnya</button>
+            </div>
+        </div>
+    </section>
+    <!--Comement Secton-->
+    <section id="comment" class="comment-section">
+        <div class="comment-cover">
+            <div class="comment-header">
+                <h2>Comment Me</h2>
+                <p>Berikan pendapat atau komentar Anda di sini. Semua komentar yang masuk akan ditampilkan dengan gambar profil yang menarik.</p>
+            </div>
+        </div>
+        
+        <!-- Form input komentar -->
+        <div class="comment-form">
+            <input type="text" id="commentName" placeholder="Nama Anda" class="input-field">
+            <textarea id="commentContent" placeholder="Tulis komentar Anda..." class="input-field"></textarea>
+            <button onclick="submitComment()" class="submit-button">Kirim Komentar</button>
+        </div>
+
+        <!-- Daftar komentar -->
+        <div class="comments-list" id="commentsList">
+            <!-- Komentar-komentar akan muncul di sini -->
+        </div>
+    </section>
+    <!--Footer-->    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Kelompok 4</h3>
+                <p>Terima kasih telah mengunjungi website kami. Hubungi kami untuk informasi lebih lanjut!</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="ph ph-facebook-logo"></i></a></li>
+                    <li><a href="#"><i class="ph ph-twitter-logo"></i></a></li>
+                    <li><a href="#"><i class="ph ph-instagram-logo"></i></a></li>
+                    <li><a href="#"><i class="ph ph-linkedin-logo"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kelompok 4. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>            
+    <script src="/js/homepage.js"></script>
+</body>
+</html>
